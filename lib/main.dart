@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jailbreak_demo/widgets/app_security_gate.dart';
 
 import 'login.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
       ),
-      home: const LoginScreen(),
+      home: AppSecurityGate(child: LoginScreen()),
     );
   }
 }
